@@ -230,7 +230,7 @@ describe 'Shoulda::Matchers::Routing::RouteMatcher', type: :routing do
               path: '/things(.:format)',
               controller: 'things',
               action: 'create',
-              defaults: { format: :json },
+              defaults: { format: 'json' },
             )
 
             matcher = build_route_matcher(
@@ -252,7 +252,7 @@ describe 'Shoulda::Matchers::Routing::RouteMatcher', type: :routing do
               path: '/things(.:format)',
               controller: 'things',
               action: 'create',
-              defaults: { format: :json },
+              defaults: { format: 'json' },
             )
 
             matcher = build_route_matcher(

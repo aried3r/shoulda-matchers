@@ -170,7 +170,7 @@ describe 'Shoulda::Matchers::ActionController::RouteMatcher', type: :controller 
           it 'accepts' do
             define_route :post, "/#{controller_name}/(.:format)",
               action: 'create',
-              defaults: { format: :json }
+              defaults: { format: 'json' }
 
             assert_accepts add_target_to(
               route(:post, "/#{controller_name}"),
@@ -185,7 +185,7 @@ describe 'Shoulda::Matchers::ActionController::RouteMatcher', type: :controller 
           it 'accepts' do
             define_route :post, "/#{controller_name}/(.:format)",
               action: 'create',
-              defaults: { format: :json }
+              defaults: { format: 'json' }
 
             assert_accepts add_target_to(
               route(:post, "/#{controller_name}"),
